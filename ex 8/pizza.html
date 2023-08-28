@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Pizza </title>
+	<style>
+
+label
+{
+width: 4em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+.submit input
+{
+margin-left: 4.5em;
+} 
+input
+{
+color: #781351;
+background: #fee3ad;
+border: 1px solid #781351
+}
+
+.submit input
+{
+color: #000;
+background: #ffa20f;
+border: 2px outset #d7b9c9
+} 
+
+fieldset
+{
+border: 1px solid #781351;
+background: #6666cc;
+width: 15em
+}
+br{clear:left;}
+legend
+{
+color: #fff;
+background: #330066;
+border: 1px solid #781351;
+padding: 2px 6px
+} 
+</style>
+  </head>
+  <body>
+    <h2>Pizza Topping </h2>    
+    <form method="post" action="process.php">
+	<fieldset>
+<legend>Select your favourite topping</legend>
+     
+      <input type="checkbox" name="`toppings`[]" value="tomato">Tomato<br>
+      <input type="checkbox" name="toppings[]" value="onion">Onion<br>
+      <input type="checkbox" name="toppings[]" value="jalapenos">Jalapeno peppers<br>
+      <input type="checkbox" name="toppings[]" value="olives">Olives<br>
+      <input type="checkbox" name="toppings[]" value="mint">Mint<br>
+      <input type="checkbox" name="toppings[]" value="pineapple">Pineapple<br>
+      <input type="checkbox" name="toppings[]" value="bacon">Bacon<br>
+      <input type="checkbox" name="toppings[]" value="chicken">Chicken<br>
+      <input type="checkbox" name="toppings[]" value="ham">Ham<br>
+      <input type="checkbox" name="toppings[]" value="anchovies">Anchovies<br>
+      <input type="checkbox" name="toppings[]" value="x-cheese">Extra cheese
+      <p>
+      <input type="submit" name="submit" value="Submit">  
+</fieldset>	  
+    </form>
+  </body>
+</html>
